@@ -1,0 +1,347 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background.png);
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+    background-color: #0990ff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0; /* Ensure no default padding */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 15px; /* Adjusted for better responsiveness */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff9c8a;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 1%;
+    font-size: 15px;
+    text-align: center; /* Center align text */
+}
+
+.header-text h1 {
+    font-size: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 5px; /* Add margin-top to create spacing between header-text h1 and p */
+}
+
+.img_home {
+    display: block;
+    margin: 10px auto 3px; /* Reduced top margin to decrease spacing */
+    max-width: 400px;
+    height: 220px;
+}
+
+.pos_cen{
+    width: 100%;
+    text-align: center;
+}
+
+.img_home2{
+    float: left;
+    width: 180px;
+    height: 180px;
+    border-radius: 50px;
+}
+
+.pos_cen1 {
+    position: absolute;
+    width: 50%;
+    left: 30px;
+    top: 50%;
+}
+
+.img_home3{
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.pos_cen2 {
+    position: absolute;
+    width: 55%;
+    left: 30%;
+    top: 20%;
+}
+.img_home4{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.pos_cen3 {
+    position: absolute;
+    width: 55%;
+    left: 16%;
+    top: 20%;
+}
+.img_home5{
+    float: right;
+    width: 180px;
+    height: 180px;
+    border-radius: 50px;
+}
+
+.pos_cen4 {
+    position: absolute;
+    width: 55%;
+    left: 43%;
+    top: 53%;
+}
+.pos_side {
+    position: absolute;
+    width: 50%;
+    left: 40%;
+    top: 25%;
+}
+
+.abt_side {
+    position: absolute;
+    width: 55%;
+    left: 40%;
+    top: 25%;
+}
+
+.place_side {
+    position: absolute;
+    width: 55%;
+    left: 30%;
+    top: 28%;
+}
+.img_cultural{
+    float: right;
+    width: 50%;
+}
+
+.img_about{
+    float: right;
+    width: 50%;
+}
+
+.img_place{
+    float: right;
+    width: 60%;
+}
+
+.cultural-text h1{
+    font-size: 2em;
+    float: left;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+.about-text h1 {
+    font-size: 2em;
+    float: left;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+
+.places-text ul {
+    font-size: 1em;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.places-text1 h1 {
+    font-size: 2em;
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the flex items */
+    padding: 10px;
+}
+
+.flex-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    background-color: #E5D9F2;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: black
+}
+
+.flex-boxes {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    background-color: #B9F3E4;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: black
+}
+
+.flex-box3 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    background-color: #E5D9F2;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: black
+}
+
+.resources-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust spacing for vertical layout */
+    }
+
+    .header-text h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .header-text p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .pos_cen {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 0 auto;
+    }
+
+    .img_home {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60px; /* Adjust the logo size for very small screens */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Adjust font size for small screens */
+    }
+
+    .header-text h1 {
+        font-size: 1.2em; /* Further adjust font size for very small screens */
+    }
+
+    .header-text p {
+        font-size: 0.9em; /* Further adjust font size for very small screens */
+    }
+
+    .pos_cen {
+        width: 100%; /* Full width for very small screens */
+        margin: 0 auto;
+    }
+}
+.footer-style {
+    background-color: green; /* Set the background color to green */
+    color: black; /* Set the text color to black */
+    border-radius: 10%; /* This will create a circle shape */
+    width: 250px; /* Adjust the width to fit your design */
+    height: 80px; /* Adjust the height to fit your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left {
+    background-color: #dbf7d0;
+    color: black;
+    padding: 10px; /* Add padding as needed */
+    position: fixed;
+    bottom: 20px; /* Add margin from the bottom */
+    left: 20px; /* Add margin from the left */
+}
+
+.footer-right {
+    background-color: #dbf7d0;
+    color: black;
+    padding: 10px; /* Add padding as needed */
+    position: fixed;
+    bottom: 20px; /* Add margin from the bottom */
+    right: 20px; /* Add margin from the right */
+}
