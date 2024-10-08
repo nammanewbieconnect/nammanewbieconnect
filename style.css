@@ -38,12 +38,12 @@ nav ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding-left: 0; /* Ensure no default padding */
+    padding-left: 0;
 }
 
 nav ul li {
     list-style: none;
-    margin: 10px 15px; /* Adjusted for better responsiveness */
+    margin: 10px 15px;
 }
 
 nav ul li a {
@@ -71,7 +71,7 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 1%;
     font-size: 15px;
-    text-align: center; /* Center align text */
+    text-align: center;
 }
 
 .header-text h1 {
@@ -83,22 +83,22 @@ nav ul li a:hover::after {
 .header-text p {
     font-size: 1.2em;
     line-height: 1.5em;
-    margin-top: 5px; /* Add margin-top to create spacing between header-text h1 and p */
+    margin-top: 5px;
 }
 
 .img_home {
     display: block;
-    margin: 10px auto 3px; /* Reduced top margin to decrease spacing */
+    margin: 10px auto 3px;
     max-width: 400px;
     height: 220px;
 }
 
-.pos_cen{
+.pos_cen {
     width: 100%;
     text-align: center;
 }
 
-.img_home2{
+.img_home2 {
     float: left;
     width: 180px;
     height: 180px;
@@ -112,7 +112,7 @@ nav ul li a:hover::after {
     top: 50%;
 }
 
-.img_home3{
+.img_home3 {
     float: right;
     width: 200px;
     height: 200px;
@@ -125,7 +125,8 @@ nav ul li a:hover::after {
     left: 30%;
     top: 20%;
 }
-.img_home4{
+
+.img_home4 {
     float: left;
     width: 200px;
     height: 200px;
@@ -138,7 +139,8 @@ nav ul li a:hover::after {
     left: 16%;
     top: 20%;
 }
-.img_home5{
+
+.img_home5 {
     float: right;
     width: 180px;
     height: 180px;
@@ -151,6 +153,7 @@ nav ul li a:hover::after {
     left: 43%;
     top: 53%;
 }
+
 .pos_side {
     position: absolute;
     width: 50%;
@@ -171,27 +174,29 @@ nav ul li a:hover::after {
     left: 30%;
     top: 28%;
 }
-.img_cultural{
+
+.img_cultural {
     float: right;
     width: 50%;
 }
 
-.img_about{
+.img_about {
     float: right;
     width: 50%;
 }
 
-.img_place{
+.img_place {
     float: right;
     width: 60%;
 }
 
-.cultural-text h1{
+.cultural-text h1 {
     font-size: 2em;
     float: left;
     margin-top: 45px;
     margin-left: 40px;
 }
+
 .about-text h1 {
     font-size: 2em;
     float: left;
@@ -205,6 +210,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
     margin-left: 50px;
 }
+
 .places-text1 h1 {
     font-size: 2em;
     float: left;
@@ -217,11 +223,11 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; /* Center the flex items */
+    justify-content: center;
     padding: 10px;
 }
 
-.flex-box {
+.flex-box, .flex-boxes, .flex-box3 {
     width: 200px;
     height: 200px;
     border: 2px solid black;
@@ -231,33 +237,11 @@ nav ul li a:hover::after {
     background-color: #E5D9F2;
     margin-left: 30px;
     margin-top: 50px;
-    color: black
+    color: black;
 }
 
 .flex-boxes {
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    text-align: center;
-    line-height: 200px;
-    border-radius: 20px;
     background-color: #B9F3E4;
-    margin-left: 30px;
-    margin-top: 50px;
-    color: black
-}
-
-.flex-box3 {
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    text-align: center;
-    line-height: 200px;
-    border-radius: 20px;
-    background-color: #E5D9F2;
-    margin-left: 30px;
-    margin-top: 50px;
-    color: black
 }
 
 .resources-text {
@@ -266,27 +250,71 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
+.footer-style {
+    background-color: green;
+    color: black;
+    border-radius: 10%;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    background-color: #dbf7d0;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+}
+
+.footer-left {
+    left: 20px;
+}
+
+.footer-right {
+    right: 20px;
+}
+
 /* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .pos_cen1, .pos_cen2, .pos_cen3, .pos_cen4, .pos_side, .abt_side, .place_side {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .img_home2, .img_home3, .img_home4, .img_home5 {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        float: none;
+        margin: 10px auto;
+    }
+}
+
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column;
         align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust spacing for vertical layout */
+        margin: 10px 0;
     }
 
     .header-text h1 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
+        font-size: 1.5em;
     }
 
     .header-text p {
-        font-size: 1em; /* Adjust font size for smaller screens */
+        font-size: 1em;
     }
 
     .pos_cen {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -297,51 +325,27 @@ nav ul li a:hover::after {
 
 @media (max-width: 480px) {
     .logo {
-        width: 60px; /* Adjust the logo size for very small screens */
+        width: 60px;
     }
 
     nav ul li a {
-        font-size: 16px; /* Adjust font size for small screens */
+        font-size: 16px;
     }
 
     .header-text h1 {
-        font-size: 1.2em; /* Further adjust font size for very small screens */
+        font-size: 1.2em;
     }
 
     .header-text p {
-        font-size: 0.9em; /* Further adjust font size for very small screens */
+        font-size: 0.9em;
     }
 
     .pos_cen {
-        width: 100%; /* Full width for very small screens */
+        width: 100%;
         margin: 0 auto;
     }
-}
-.footer-style {
-    background-color: green; /* Set the background color to green */
-    color: black; /* Set the text color to black */
-    border-radius: 10%; /* This will create a circle shape */
-    width: 250px; /* Adjust the width to fit your design */
-    height: 80px; /* Adjust the height to fit your design */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.footer-left {
-    background-color: #dbf7d0;
-    color: black;
-    padding: 10px; /* Add padding as needed */
-    position: fixed;
-    bottom: 20px; /* Add margin from the bottom */
-    left: 20px; /* Add margin from the left */
-}
-
-.footer-right {
-    background-color: #dbf7d0;
-    color: black;
-    padding: 10px; /* Add padding as needed */
-    position: fixed;
-    bottom: 20px; /* Add margin from the bottom */
-    right: 20px; /* Add margin from the right */
+    .img_home {
+        max-width: 100%;
+    }
 }
